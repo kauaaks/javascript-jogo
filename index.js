@@ -5,10 +5,10 @@ const $questionText = document.querySelector(".question")
 const $nextQuestionButton = document.querySelector(".next-question") 
 
 $startGameButton.addEventListener("click", startGame)
-$nextQuestionButton.addEventListener("click",  )
+$nextQuestionButton.addEventListener("click", displayNextQuestion)
 
 let currentQuestionIndex = 0
-
+let totalCorrect = 0
 
 function startGame() {
     $startGameButton.classList.add("hide")
@@ -17,8 +17,10 @@ function startGame() {
 }
 
 function displayNextQuestion() {
-    while($answersContainer.firstChild) {
-        $answersContainer.removeChild($answersContainer.firstChild)
+    resetState()
+
+    if (questions.length === currentQuestionIndex) {
+        return finishGame()
     }
 
     $questionText.textContent = questions[currentQuestionIndex].question
@@ -35,11 +37,21 @@ function displayNextQuestion() {
     })
 }
 
+function resetState() {
+    while($answersContainer.firstChild) {
+        $answersContainer.removeChild($answersContainer.firstChild)
+    }
+
+    document.body.removeAttribute("class")
+    $nextQuestionButton.classList.add("hide")
+}
+
 function selectAnswer(event) {
     const answerClicked = event.target
 
     if (answerClicked.dataset.correct) {
         document.body.classList.add("correct")
+        totalCorrect++
     } else {
         document.body.classList.add("incorrect")
     }
@@ -58,7 +70,38 @@ function selectAnswer(event) {
     currentQuestionIndex++
 }
 
+function finishGame() {
+    const totalQuestion = questions.length
+    const performance = Math.floor(totalCorrect * 100 / totalQuestion)
 
+    let message = ""
+
+    switch (true) {
+        case (performance >= 90):
+            message = "Excelente :)";
+            break;
+        case (performance >= 70):
+            message = "muito bom :)";
+            break;
+        case (performance >= 50): 
+            message = "bom";
+            break;
+        default:
+            message = "Pode melhorar :(";
+            
+    }
+
+    $questionsContainer.innerHTML = 
+    `
+        <p class="final-message">
+            você acertou ${totalCorrect} de ${totalQuestion} questões!
+            <span>Resultado: ${message}</span>
+        </p>
+        <button onclick=window.location.reload() class="button">
+            refazer teste
+        </button>
+    `;
+}
 
 
 
