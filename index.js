@@ -127,93 +127,93 @@ function finishGame() {
 
 const questions = [
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "1.	Qual foi a principal contribuição de Steve Wozniak para a Apple Inc.?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Desenvolvimento do iPhone", correct: false },
+        {text: "Criação dos computadores pessoais Apple I e Apple II", correct: true},
+        {text: "Design do logotipo da Apple", correct: false},
+        {text: "Implementação do primeiro sistema operacional da Apple", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "2.	Por que Steve Wozniak deixou seu emprego na HP?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Foi demitido por falta de desempenho", correct: false },
+        {text: "Para fundar a Apple com Steve Jobs", correct: true},
+        {text: "NAceitou uma oferta melhor na IBM", correct: false},
+        {text: "Para se tornar professor universitário", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "3.	Qual foi o primeiro projeto conjunto de Wozniak e Jobs?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        {text: "Blue Boxes", correct: true},
+        { text: "Apple I", correct: false},
+        {text: "Macintosh", correct: false},
+        {text: "Mouse óptico", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "4.	Como Wozniak é conhecido por seu estilo de vida?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Luxuoso e extravagante", correct: false },
+        {text: "Corporativo e tradicional", correct: false},
+        {text: "Exclusivamente focado em tecnologia", correct: false},
+        {text: "Reservado e filantrópico", correct: true},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "5.	Qual foi o primeiro produto desenvolvido pela HP?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Computador pessoal HP-85", correct: false },
+        {text: "Calculadora científica de mão", correct: false},
+        {text: "Oscilador de áudio", correct: true},
+        {text: "Impressora a laser", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "6.	Qual foi a contribuição da HP para o mercado financeiro?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Primeira calculadora científica de mão", correct: false },
+        {text: "Relógio atômico para cálculos precisos", correct: false},
+        {text: "Lançamento da HP-12C", correct: true},
+        {text: "Desenvolvimento de software para bancos", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "7.	O que levou ao nome “HP” em vez de “PH”?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "A decisão foi baseada na ordem alfabética", correct: false },
+        {text: "Os fundadores jogaram uma moeda", correct: true},
+        {text: "Foi uma escolha aleatória", correct: false},
+        {text: "Preferiram a sonoridade do nome", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "8.	Qual foi um dos principais erros estratégicos da HP?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        {text: "Lançar o sistema operacional WebOS", correct: true},
+        { text: "Rejeitar o projeto do Apple I", correct: false },
+        {text: "Não entrar no mercado de calculadoras", correct: false},
+        {text: "Ignorar o mercado de impressoras", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "9.	Qual foi a principal mensagem do filme Vale Do Silício em relação à HP?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Destacou a liderança inovadora de seus fundadores", correct: false },
+        {text: "Mostrou como ela apoiou Steve Wozniak e Jobs", correct: false},
+        {text: "Criticou a falta de visão para novos mercados", correct: true},
+        {text: "Enfatizou seu papel no mercado de consumo", correct: false},
         ]
     },
     {
-        question: "Dentro de qual elemento HTML colocamos o JS?",
+        question: "10.	Qual foi o impacto do Homebrew Computer Club na criação da Apple?",
         answers:[
-        { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-        {text: "No <body>", correct: false},
-        {text: "No <head>", correct: false},
-        {text: "Em outro lugar", correct: false},
+        { text: "Foi onde Wozniak encontrou investidores para a Apple", correct: false },
+        {text: "Inspirou Woz e Jobs a colaborarem em projetos de hardware", correct: true},
+        {text: "Garantiu financiamento inicial para a empresa", correct: false},
+        {text: "Forneceu patentes usadas no Apple I", correct: false},
         ]
     },
 ]
